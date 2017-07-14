@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.1",
+    "html-webpack-plugin": "^2.29.0",
+    "typescript": "^2.4.1",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
