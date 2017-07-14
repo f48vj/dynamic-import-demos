@@ -2,7 +2,9 @@ async function hello() {
     const {
         default: world
     } = await import(/* webpackChunkName: "world" */ './world.js');
-    document.body.innerText = `hello ${world}`;
+    const env = 'dev'
+    const config = await import(/* webpackMode: "lazy-once", webpackChunkName: "config" */`./config/${env}.json`);
+    document.body.innerText = `hello ${world} env: ${config.env}`;
 }
 
 hello();
